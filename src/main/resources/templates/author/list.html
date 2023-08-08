@@ -9,13 +9,16 @@
 
 <table>
     <tr>
-        <th>ID</th>
-        <th>Author FName</th>
+        <th>ID  </th>
+        <th>First Name</th>
+        <th>Last Name</th>
 
     </tr>
     <tr th:each="author : ${author}">
         <td th:text="${author.id}">123</td>
-        <td th:text="${author.author}"> Spring in Action</td>
+        <td th:text="${author.firstName}"> Spring in Action</td>
+        <td th:text="${author.lastName}"> Spring in Action</td>
+
 
     </tr>
 </table>
